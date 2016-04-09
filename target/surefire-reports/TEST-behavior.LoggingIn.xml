@@ -1,0 +1,16 @@
+<testsuite tests='3' results='0' failures='1' disabled='2' errors='0' time='0.907' name='behavior.logging_in'>
+  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.094'>
+    <failure message='Step "user will be logged in to system" -- [&gt;, username:, password:, wrong username or password, &gt;] doesn&apos;t contain logged in'>Step "user will be logged in to system" -- [&gt;, username:, password:, wrong username or password, &gt;] doesn't contain logged in
+
+    scenario user can login with correct password
+      given command login selected
+      when a valid username and password are entered
+      then user will be logged in to system</failure>
+  </testcase>
+  <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.016'>
+    <skipped />
+  </testcase>
+  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0'>
+    <skipped />
+  </testcase>
+</testsuite>
